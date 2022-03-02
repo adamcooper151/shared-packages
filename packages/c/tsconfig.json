@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "../a"
+    },
+    {
+      "path": "../b"
+    }
+  ]
+}

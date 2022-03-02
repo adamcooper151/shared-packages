@@ -1,0 +1,26 @@
+{
+  "name": "@adam-deps/a",
+  "version": "1.0.5",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "types": "build/index.d.ts",
+  "license": "MIT",
+  "gitHead": "3385d08ac9f280d668014d344bc8d07f18111226",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf build && rimraf node_modules",
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn compile",
+    "watch": "yarn clean && tsc --build -w && cp \"./package.json\" ./dist/",
+    "compile": "tsc --build && cp \"./package.json\" ./dist/",
+    "test": "echo 'no test'",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0",
+    "watchrollup": "rollup -c ../../rollup.config.dev.js -w",
+    "rollup": "rollup -c ../../rollup.config.dev.js"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

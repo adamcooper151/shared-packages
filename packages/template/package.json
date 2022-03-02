@@ -1,0 +1,23 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "gitHead": "3385d08ac9f280d668014d344bc8d07f18111226",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn compile",
+    "watch": "yarn clean && tsc --build -w && cp \"./package.json\" ./dist/",
+    "compile": "tsc --build && cp \"./package.json\" ./dist/",
+    "test": "echo 'no test'",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
