@@ -1,6 +1,6 @@
 {
   "name": "@adam-deps/c",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "types": "build/index.d.ts",
@@ -21,7 +21,7 @@
     "rollup": "rollup -c ../../rollup.config.dev.js"
   },
   "dependencies": {
-    "@adam-deps/a": "^1.0.7",
-    "@adam-deps/b": "^1.0.5"
+    "@adam-deps/a": "^1.0.8",
+    "@adam-deps/b": "^1.0.6"
   }
 }
