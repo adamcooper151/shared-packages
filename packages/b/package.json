@@ -5,12 +5,12 @@
   "module": "build/index.esm.js",
   "types": "build/index.d.ts",
   "license": "MIT",
-  "gitHead": "8d4d03ecd4051c88e03ef0f90db69c1fb50fec47",
+  "gitHead": "01838ecbc91aec904f53d17125e42791997a6de0",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "clean": "rimraf build && rimraf node_modules",
+    "clean": "rimraf build && rimraf node_modules && rm tsconfig.tsbuildinfo",
     "prepack": "yarn build",
     "build": "yarn clean && yarn compile",
     "watch": "yarn clean && tsc --build -w && cp \"./package.json\" ./dist/",

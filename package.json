@@ -1,10 +1,9 @@
 {
   "private": true,
-  "main": "build/index.js",
-  "module": "build/index.esm.js",
-  "types": "build/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
   "name": "monorepo",

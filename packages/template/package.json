@@ -1,15 +1,16 @@
 {
   "name": "template",
   "version": "1.0.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "types": "build/index.d.ts",
   "license": "MIT",
-  "gitHead": "3385d08ac9f280d668014d344bc8d07f18111226",
+  "gitHead": "01838ecbc91aec904f53d17125e42791997a6de0",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+    "clean": "rimraf build && rimraf node_modules && rm tsconfig.tsbuildinfo",
     "prepack": "yarn build",
     "build": "yarn clean && yarn compile",
     "watch": "yarn clean && tsc --build -w && cp \"./package.json\" ./dist/",

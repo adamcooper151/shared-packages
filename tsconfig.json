@@ -11,12 +11,6 @@
   "files": [],
   "references": [
     {
-      "path": "apps/my-app-2"
-    },
-    {
-      "path": "apps/my-app"
-    },
-    {
       "path": "packages/a"
     },
     {
